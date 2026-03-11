@@ -61,8 +61,8 @@ et un graphique en camembert pour la répartition des abonnements. Le tableau af
 ```
 
 Claude va :
-1. Lire [`skills/Dashboard_creation.md`](skills/Dashboard_creation.md) pour les règles de génération HTML
-2. Appliquer les patterns de [`skills/Dashboard_design.md`](skills/Dashboard_design.md)
+1. Lire [`skills/Dashboard_creation_skill.md`](skills/Dashboard_creation_skill.md) pour les règles de génération HTML
+2. Appliquer les patterns de [`skills/Dashboard_design_skill.md`](skills/Dashboard_design_skill.md)
 3. Générer `<nom>-dashboard.html` avec des données fictives réalistes
 
 ### 4. Ouvrir votre dashboard
@@ -99,9 +99,9 @@ Dites ensuite à Claude d'utiliser ces résultats lors de la génération du das
 ```
 dashboard-generator/
 ├── skills/
-│   ├── Dashboard_creation.md   # Règles HTML (CSS/JS inline, données fictives, Chart.js)
-│   ├── Dashboard_design.md     # Patterns de mise en page : KPI, graphiques, tableaux, temps réel
-│   └── data_web_serach.md      # Skill de recherche web
+│   ├── Dashboard_creation_skill.md   # Règles HTML (CSS/JS inline, données fictives, Chart.js)
+│   ├── Dashboard_design_skill.md     # Patterns de mise en page : KPI, graphiques, tableaux, temps réel
+│   └── data_web_serach_skill.md      # Skill de recherche web
 ├── CLAUDE.md                   # Instructions projet Claude Code (chargées automatiquement)
 └── README.md
 ```
@@ -110,7 +110,7 @@ dashboard-generator/
 
 ## Référence des Skills
 
-### Dashboard Design — [`skills/Dashboard_design.md`](skills/Dashboard_design.md)
+### Dashboard Design — [`skills/Dashboard_design_skill.md`](skills/Dashboard_design_skill.md)
 
 Définit les règles structurelles et visuelles que Claude applique :
 
@@ -123,7 +123,7 @@ Définit les règles structurelles et visuelles que Claude applique :
 | **Grille responsive** | Système 12 colonnes — breakpoints sm / md / lg |
 | **Bonnes pratiques** | Règle des 5 secondes, données critiques au-dessus du pli, divulgation progressive |
 
-### Dashboard Creation — [`skills/Dashboard_creation.md`](skills/Dashboard_creation.md)
+### Dashboard Creation — [`skills/Dashboard_creation_skill.md`](skills/Dashboard_creation_skill.md)
 
 Règles pour le fichier HTML généré :
 
