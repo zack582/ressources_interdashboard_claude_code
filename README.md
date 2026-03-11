@@ -40,8 +40,8 @@ Aucune étape de build. Aucun framework. Ouvrez le `.html` directement dans votr
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/your-username/dashboard-generator.git
-cd dashboard-generator
+git clone https://github.com/zack582/ressources_interdashboard_claude_code.git
+cd ressources_interdashboard_claude_code
 ```
 
 ### 2. Ouvrir Claude Code
@@ -61,8 +61,8 @@ et un graphique en camembert pour la répartition des abonnements. Le tableau af
 ```
 
 Claude va :
-1. Lire [`skeels/Dashboard_creation.md`](skeels/Dashboard_creation.md) pour les règles de génération HTML
-2. Appliquer les patterns de [`skeels/Dashboard_design.md`](skeels/Dashboard_design.md)
+1. Lire [`skills/Dashboard_creation.md`](skills/Dashboard_creation.md) pour les règles de génération HTML
+2. Appliquer les patterns de [`skills/Dashboard_design.md`](skills/Dashboard_design.md)
 3. Générer `<nom>-dashboard.html` avec des données fictives réalistes
 
 ### 4. Ouvrir votre dashboard
@@ -82,8 +82,8 @@ start mon-dashboard.html
 Quand votre dashboard a besoin de chiffres à jour, utilisez le skill de recherche web avant de générer :
 
 ```bash
-bun skeels/scripts/search.ts "SaaS benchmark metrics 2026"
-bun skeels/scripts/search.ts "Chart.js 4 API reference"
+bun skills/scripts/search.ts "SaaS benchmark metrics 2026"
+bun skills/scripts/search.ts "Chart.js 4 API reference"
 ```
 
 **Conseils :**
@@ -98,7 +98,7 @@ Dites ensuite à Claude d'utiliser ces résultats lors de la génération du das
 
 ```
 dashboard-generator/
-├── skeels/
+├── skills/
 │   ├── Dashboard_creation.md   # Règles HTML (CSS/JS inline, données fictives, Chart.js)
 │   ├── Dashboard_design.md     # Patterns de mise en page : KPI, graphiques, tableaux, temps réel
 │   └── data_web_serach.md      # Skill de recherche web
@@ -110,7 +110,7 @@ dashboard-generator/
 
 ## Référence des Skills
 
-### Dashboard Design — [`skeels/Dashboard_design.md`](skeels/Dashboard_design.md)
+### Dashboard Design — [`skills/Dashboard_design.md`](skills/Dashboard_design.md)
 
 Définit les règles structurelles et visuelles que Claude applique :
 
@@ -123,7 +123,7 @@ Définit les règles structurelles et visuelles que Claude applique :
 | **Grille responsive** | Système 12 colonnes — breakpoints sm / md / lg |
 | **Bonnes pratiques** | Règle des 5 secondes, données critiques au-dessus du pli, divulgation progressive |
 
-### Dashboard Creation — [`skeels/Dashboard_creation.md`](skeels/Dashboard_creation.md)
+### Dashboard Creation — [`skills/Dashboard_creation.md`](skills/Dashboard_creation.md)
 
 Règles pour le fichier HTML généré :
 
