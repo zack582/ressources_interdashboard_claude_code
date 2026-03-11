@@ -16,6 +16,16 @@ Aucune étape de build. Aucun framework. Ouvrez le `.html` directement dans votr
 
 ---
 
+## Exemple de projet
+
+**[AI Market Dashboard →](https://iamarketdash.netlify.app/)**
+
+![Aperçu du dashboard AI Market](preview.png)
+
+> Dashboard généré en une seule commande Claude Code — données marché IA 2025/2026, graphiques multi-sources, filtres dynamiques, mode sombre.
+
+---
+
 ## Prérequis
 
 | Outil | Version | Utilité |
